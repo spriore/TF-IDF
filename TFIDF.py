@@ -59,7 +59,7 @@ for url in urls:
         text   = (line.translate(translator) for line in chunks)
         
         #Raw term frequency counts
-        counts = dict.fromkeys(s, 0) 
+        counts = dict.fromkeys(terms, 0) 
         w      = 0
         for line in text:
             new_line = (line.split())
